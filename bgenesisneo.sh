@@ -5,13 +5,13 @@ psztimestamp="The Wbubbler 17/Feb/2021 Hello, I am Wbubbler, your friend! Bub is
 algorithm="SHA256"
 
 # mainnet
-python genesis.py --time=1629119094 --timestamp="$psztimestamp" --algorithm=$algorithm --pubkey=$pubkey --bits=0x1d00ffff
+python genesis.py --time=1629119094 --timestamp="$psztimestamp" --nonce=737906790 --algorithm=$algorithm --pubkey=$pubkey --bits=0x1d00ffff
 
 # testnet
-python genesis.py --time=1630243004 --timestamp="$psztimestamp" --algorithm=$algorithm --pubkey=$pubkey --bits=0x1d00ffff
+python genesis.py --time=1630243004 --timestamp="$psztimestamp" --nonce=1641117563 --algorithm=$algorithm --pubkey=$pubkey --bits=0x1d00ffff
 
 # signet
-python genesis.py --time=1630262260 --timestamp="$psztimestamp" --algorithm=$algorithm --pubkey=$pubkey --bits=0x1e0377ae
+python genesis.py --time=1630262260 --timestamp="$psztimestamp" --nonce=3888117 --algorithm=$algorithm --pubkey=$pubkey --bits=0x1e0377ae
 
 # regtest
-python genesis.py --time=1630243004 --timestamp="$psztimestamp" --algorithm=$algorithm --pubkey=$pubkey --bits=0x207fffff
+python genesis.py --time=1630243004 --timestamp="$psztimestamp" --nonce=0 --algorithm=$algorithm --pubkey=$pubkey --bits=0x207fffff
